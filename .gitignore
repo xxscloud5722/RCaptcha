@@ -1,0 +1,7 @@
+/target
+.idea/
+captcha.jpg
+slider.png
+slider_background.png
+RCaptcha/target/
+RCaptchaWasm/target/

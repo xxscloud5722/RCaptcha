@@ -1,0 +1,20 @@
+[package]
+name = "rcaptcha"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "rcaptcha"
+crate-type = ["cdylib"]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+image = "*"
+imageproc = "*"
+rand = "*"
+rust-embed = "*"
+rusttype = "*"
+thiserror = "*"
+jni = "*"
