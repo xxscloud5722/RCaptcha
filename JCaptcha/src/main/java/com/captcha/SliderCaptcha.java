@@ -1,4 +1,4 @@
-package com.xxscloud.beer.captcha;
+package com.captcha;
 
 import lombok.Getter;
 import lombok.ToString;

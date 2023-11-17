@@ -1,4 +1,4 @@
-package com.xxscloud.beer.captcha;
+package com.captcha;
 
 import java.io.File;
 import java.io.FileOutputStream;
