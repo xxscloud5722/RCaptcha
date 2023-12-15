@@ -3,28 +3,11 @@ name = "rcaptcha-wasm"
 version = "0.1.0"
 edition = "2021"
 
-#[lib]
-#name = "rcaptcha_wasm"
-#crate-type = ["cdylib"]
+[lib]
+name = "rcaptcha_wasm"
+crate-type = ["cdylib"]
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-#ipp = "*"
-#tokio = { version = "*", features = ["full"] }
-#[target.'cfg(windows)'.dependencies]
-#winapi = { version = "0.3", features = ["winuser", "minwindef", "windef", "winspool", "wlanihvtypes", "wlantypes",
-#    "winbase", "shellapi", "commdlg", "winnt", "errhandlingapi", "wingdi"] }
-
-[build-dependencies]
-cc = "1"
-glob = "0.3"
-
-[features]
-default = ["std", "parallel", "neon"]
-std = []
-parallel = ["cc/parallel"]
-neon = []                      # ARM NEON SIMD (will crash on ARM CPUs without it)
-sse41 = []                     # x64 SSE 4.1 (will crash on x86 CPUs without it)
-avx2 = []                      # x64 AVX2 (will crash on x86 CPUs without it)
